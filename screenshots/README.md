@@ -7,6 +7,7 @@ To help review your infrastructure, please include the following screenshots in 
 
 * GitHub repository’s settings showing your Travis webhook (can be found in Settings - Webhook)
 ![](2.1.travis_element.png)
+
 * Travis CI showing a successful build and deploy job
 ![](2.travisCI.png)
 
@@ -23,12 +24,13 @@ kubectl describe services
 ```
 ![](services.png)
 ![](services1.png)
+
 * To verify that you have horizontal scaling set against CPU usage
 ```bash
 kubectl describe hpa
 ```
 ![](hpa.png)
-
+![](replicas.png)
 
 * To verify that you have set up logging with a backend application
 ```bash
